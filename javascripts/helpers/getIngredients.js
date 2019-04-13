@@ -15,7 +15,7 @@ const getBread = () => {
     let breadBoxes = Array.from(document.getElementById('breads').getElementsByClassName('form-check-input'));
     breadBoxes.forEach((box) => {
         if (box.checked) {
-            breadArray.push(box.id, breads[box.id]);
+            breadArray.push([box.id, breads[box.id]]);
         }
     });
     return breadArray;
@@ -26,7 +26,7 @@ const getMeat = () => {
     let meatBoxes = Array.from(document.getElementById('meats').getElementsByClassName('form-check-input'));
     meatBoxes.forEach((box) => {
         if (box.checked) {
-            meatArray.push(box.id, meats[box.id]);
+            meatArray.push([box.id, meats[box.id]]);
         }
     });
     return meatArray;
@@ -37,7 +37,7 @@ const getCheese = () => {
     let cheeseBoxes = Array.from(document.getElementById('cheeses').getElementsByClassName('form-check-input'));
     cheeseBoxes.forEach((box) => {
         if (box.checked) {
-            cheeseArray.push(box.id, cheeses[box.id]);
+            cheeseArray.push([box.id, cheeses[box.id]]);
         }
     });
     return cheeseArray;
@@ -48,7 +48,7 @@ const getVeggie = () => {
     let veggieBoxes = Array.from(document.getElementById('veggies').getElementsByClassName('form-check-input'));
     veggieBoxes.forEach((box) => {
         if (box.checked) {
-            veggieArray.push(box.id, veggies[box.id]);
+            veggieArray.push([box.id, veggies[box.id]]);
         }
     });
     return veggieArray;
@@ -59,7 +59,7 @@ const getCondiment = () => {
     let condimentBoxes = Array.from(document.getElementById('condiments').getElementsByClassName('form-check-input'));
     condimentBoxes.forEach((box) => {
         if (box.checked) {
-            condimentArray.push(box.id, condiments[box.id]);
+            condimentArray.push([box.id, condiments[box.id]]);
         }
     });
     return condimentArray;

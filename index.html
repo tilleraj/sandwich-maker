@@ -17,7 +17,51 @@
 </head>
 
 <body>
-    <h1>Welcome to Sandwich Maker!</h1>
+    <div class="container">
+        <h1>Welcome to Sandwich Maker!</h1>
+        <div class="row">
+            <div class="col-12">
+                <form>
+                    <div class="form-group" id="breads">
+                        <h3>Breads</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="sourdough">
+                            <label class="form-check-label" for="sourdough">
+                                $1.00 - Sourdough
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="roseParm">
+                            <label class="form-check-label" for="roseParm">
+                                $0.85 - Rosemary Parmesan
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="rye">
+                            <label class="form-check-label" for="rye">
+                                $0.75 - Rye
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="wheat">
+                            <label class="form-check-label" for="wheat">
+                                $0.50 - Wheat
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="white">
+                            <label class="form-check-label" for="white">
+                                $0.30 - White
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="order">Order Now</button>
+                </form>
+            </div>
+            <div class="col-12" id="orderDiv"></div>
+        </div>
+    </div>
+
 
     <!-- JavaScript -->
     <script src="./javascripts/main.js"></script>

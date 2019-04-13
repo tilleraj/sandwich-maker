@@ -3,6 +3,7 @@ import breadInfo from '../helpers/bread.js';
 import meatInfo from '../helpers/meat.js';
 import cheeseInfo from '../helpers/cheese.js';
 import veggieInfo from '../helpers/veggie.js';
+import condimentInfo from '../helpers/condiment.js';
 import orderString from '../helpers/orderString.js';
 import util from '../helpers/util.js';
 
@@ -12,6 +13,7 @@ const buildOrder = (e) => {
     const meats = meatInfo.getMeatInfo();
     const cheeses = cheeseInfo.getCheeseInfo();
     const veggies = veggieInfo.getVeggieInfo();
+    const condiments = condimentInfo.getCondimentInfo();
     let order = [];
 
     let breadBoxes = Array.from(document.getElementById('breads').getElementsByClassName('form-check-input'));
@@ -39,6 +41,13 @@ const buildOrder = (e) => {
     veggieBoxes.forEach((box) => {
         if (box.checked) {
             order.push([box.id, veggies[box.id]]);
+        }
+    });
+
+    let condimentBoxes = Array.from(document.getElementById('condiments').getElementsByClassName('form-check-input'));
+    condimentBoxes.forEach((box) => {
+        if (box.checked) {
+            order.push([box.id, condiments[box.id]]);
         }
     });
 

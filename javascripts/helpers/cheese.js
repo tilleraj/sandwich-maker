@@ -6,8 +6,8 @@ const cheeseInfo = {
     monterey: 1.60
 };
 
-const geCheeseInfo = () => {
+const getCheeseInfo = () => {
     return cheeseInfo;
 }
 
-export default { geCheeseInfo };
+export default { getCheeseInfo };

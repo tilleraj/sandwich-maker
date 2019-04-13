@@ -1,3 +1,7 @@
 body {
     background-color: blanchedalmond;
 }
+
+.form-group {
+    min-width: 165px;
+}

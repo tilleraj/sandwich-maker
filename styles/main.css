@@ -5,3 +5,11 @@ body {
 .form-group {
     min-width: 165px;
 }
+
+.receipt {
+    margin-top: 1rem;
+}
+
+.table td, .table th {
+    padding: 0.5rem 0.75rem;
+}

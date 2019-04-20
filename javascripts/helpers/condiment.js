@@ -1,9 +1,9 @@
 const condimentInfo = {
-    mustard: 0.10,
-    mayonnaise: 0.30,
-    ketchup: 0.05,
-    bbqSauce: 0.15,
-    ranch: 0.60
+    Mustard: 0.10,
+    Mayonnaise: 0.30,
+    Ketchup: 0.05,
+    BBQSauce: 0.15,
+    Ranch: 0.60
 };
 
 const getCondimentInfo = () => {

@@ -1,9 +1,9 @@
 const breadInfo = {
-    sourdough: 1.00,
-    roseParm: 0.85,
-    rye: 0.75,
-    wheat: 0.50,
-    white: 0.30
+    Sourdough: 1.00,
+    RosemaryParmesan: 0.85,
+    Rye: 0.75,
+    Wheat: 0.50,
+    White: 0.30
 };
 
 const getBreadInfo = () => {

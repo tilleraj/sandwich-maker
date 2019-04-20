@@ -1,9 +1,9 @@
 const veggieInfo = {
-    tomato: 0.65,
-    onion: 0.50,
-    peppers: 0.45,
-    lettuce: 0.30,
-    cucumber: 0.25
+    Tomato: 0.65,
+    Onion: 0.50,
+    Peppers: 0.45,
+    Lettuce: 0.30,
+    Cucumber: 0.25
 };
 
 const getVeggieInfo = () => {

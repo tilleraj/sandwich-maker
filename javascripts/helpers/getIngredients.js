@@ -3,6 +3,7 @@ import meatInfo from '../helpers/meat.js';
 import cheeseInfo from '../helpers/cheese.js';
 import veggieInfo from '../helpers/veggie.js';
 import condimentInfo from '../helpers/condiment.js';
+import cheese from '../helpers/cheese.js';
 
 const breads = breadInfo.getBreadInfo();
 const meats = meatInfo.getMeatInfo();
@@ -18,6 +19,9 @@ const getBread = () => {
             breadArray.push([box.id, breads[box.id]]);
         }
     });
+    if (breadArray.length > 0){
+        breadArray.unshift(['Breads']);
+    }
     return breadArray;
 }
 
@@ -29,6 +33,9 @@ const getMeat = () => {
             meatArray.push([box.id, meats[box.id]]);
         }
     });
+    if (meatArray.length > 0){
+        meatArray.unshift(['Meats']);
+    }
     return meatArray;
 }
 
@@ -40,6 +47,9 @@ const getCheese = () => {
             cheeseArray.push([box.id, cheeses[box.id]]);
         }
     });
+    if (cheeseArray.length > 0){
+        cheeseArray.unshift(['Cheeses']);
+    }
     return cheeseArray;
 }
 
@@ -51,6 +61,9 @@ const getVeggie = () => {
             veggieArray.push([box.id, veggies[box.id]]);
         }
     });
+    if (veggieArray.length > 0){
+        veggieArray.unshift(['Veggies']);
+    }
     return veggieArray;
 }
 
@@ -62,6 +75,9 @@ const getCondiment = () => {
             condimentArray.push([box.id, condiments[box.id]]);
         }
     });
+    if (condimentArray.length > 0){
+        condimentArray.unshift(['Condiments']);
+    }
     return condimentArray;
 }
 

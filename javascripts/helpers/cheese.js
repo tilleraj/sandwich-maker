@@ -1,9 +1,9 @@
 const cheeseInfo = {
-    provolone: 2.56,
-    cheddar: 1.75,
-    swiss: 1.56,
-    asiago: 1.40,
-    monterey: 1.60
+    Provolone: 2.56,
+    Cheddar: 1.75,
+    Swiss: 1.56,
+    Asiago: 1.40,
+    Monterey: 1.60
 };
 
 const getCheeseInfo = () => {
